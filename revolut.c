@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include "revolut.h"
+
 void consulterSolde(float solde)
 {
     printf("Votre solde est de : %f\n", solde);

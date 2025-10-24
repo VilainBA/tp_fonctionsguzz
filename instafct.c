@@ -8,8 +8,17 @@
  * @param nbAbonnes
  * @return
  */
-float tauxEngagement(int nbLikes, int nbCommentaires, int nbAbonnes ){
-    float taux = (float)(nbLikes + nbCommentaires)/(float)nbAbonnes *100;
+struct influenceur {
+    int nbLikes;
+    int nbCommentaires;
+    int nbAbonnes;
+    short int age;
+
+};
+
+
+float tauxEngagement(influenceur x ){
+    float taux = (float)(x.nbLikes + x.nbCommentaires)/(float)x.nbAbonnes *100;
     return (taux>100) ? 100: taux;
 }
 

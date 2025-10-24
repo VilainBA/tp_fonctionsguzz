@@ -3,20 +3,19 @@
 
 
 int main(void) {
-    int nbLikes ;
-    int nbCommentaires;
-    int nbAbonnes ;
-    float taux;
+
+    struct influenceur trump;
+
 
     printf("Rentrez votre nombre d'abonnés: ");
-    scanf("%d", &nbAbonnes);
+    scanf("%d", &trump.nbAbonnes);
     printf("Rentrez votre nombre de likes: ");
-    scanf("%d", &nbLikes);
+    scanf("%d", &trump.nbLikes);
     printf("Rentrez votre nombre de comentaires : ");
-    scanf("%d", &nbCommentaires);
+    scanf("%d", &trump.nbCommentaires);
 
     //procedure
-    taux = tauxEngagement(nbLikes, nbCommentaires, nbAbonnes );
+    taux = tauxEngagement(trump );
 
     printf("\n ----------------\n");
     printf("Nombre d'abonnés : %d \n", nbAbonnes);
