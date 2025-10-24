@@ -3,8 +3,17 @@ project(tp_fonctions C)
 
 set(CMAKE_C_STANDARD 11)
 
-add_executable(exo_1005 1005.c)
+add_executable(exo_1005 1005.c
+        rectangle.c
+        rectangle.h
+        triangle.c
+        triangle.h
+)
 
-add_executable(exo_1007 1007.c)
+add_executable(exo_1007 1007.c
+        revolut.c
+        revolut.h)
 
-add_executable(exo_1008 1008.c)
+add_executable(exo_1008 1008.c
+        instafct.c
+        instafct.h)
